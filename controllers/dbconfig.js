@@ -13,6 +13,7 @@ const client = new Client({
   }
   
 })
+console.log(process.env.dbuser | process.env.host | process.env.database | process.env.password | process.env.port  )
 
 function connect()
 {

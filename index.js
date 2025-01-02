@@ -3,6 +3,7 @@ const db=require("./db.js")
 const cors=require("cors")
 const Topbanner=require("./src/topbanner/routes")
 const RandomQuotes=require("./src/randomQuotes/routes")
+const Stats=require("./src/statspage/routes.js")
 
 
 
@@ -12,6 +13,7 @@ app.use(cors())
 
 app.use("/TopBanner",Topbanner)
 app.use("/randomquote",RandomQuotes)
+app.use("/statspage",Stats)
 
 
 
